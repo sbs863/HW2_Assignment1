@@ -1,14 +1,8 @@
-
-section {
-	height: 1010px;
-}
 .container {
-	height: 1010px;
-	width: 650px;
-	display: inline-block;
-	/*padding-left: 10px;*/
+	display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
-
 
 footer {
 	border-top: 5px;
@@ -21,22 +15,20 @@ footer {
 
 .foot-box {
     display: inline-block;
-    width: 1920px;
+    width: 100%;
     height: 100px;
     background-color:#666666; 
     text-align: center;
     color: #9d9d9d;
-    position:static;
-	/*bottom:0;*/
+    position:static;	
 	left:0;
 }
 
 .relative {
 	position: relative;
-	height: 275px;
-	width: 275px;
+	height: 250px;
+	width: 250px;
 	display: inline-block;
-	margin-right: 45px;
 	margin-bottom: 45px;
 }
 
@@ -52,5 +44,25 @@ footer {
     padding-top: 10px;
     color: #ffffff;
     font-family: 'Georgia', Times, Times New Roman, serif;
+}
 
-    /*changes made*/
+@media screen and (max-width: 768px) {
+
+section {
+	width: 100%;
+}
+
+.container {
+	display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+
+
+@media screen and (max-width: 640px) {
+.relative {
+	height: 350px;
+	width: 350px;
+}
+
